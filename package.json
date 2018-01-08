@@ -1,0 +1,36 @@
+{
+  "name": "css-elevation",
+  "version": "1.0.0",
+  "description": "Object Elevation with Box Shadow",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "jest --silent",
+    "test:cover": "npm run test -- --coverage ",
+    "test:cover:CI":
+      "npm run test:cover && cat ./coverage/lcov.info | node_modules/coveralls/bin/coveralls.js",
+    "start": "webpack --watch",
+    "build": "webpack",
+    "prepublish": "npm run test && npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vinodronold/css-elevation.git"
+  },
+  "keywords": ["Box", "Shadow", "Elevation", "CSS"],
+  "author": "vinodronold (vinodronoldbe@gmail.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/vinodronold/css-elevation/issues"
+  },
+  "homepage": "https://github.com/vinodronold/css-elevation#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.1",
+    "coveralls": "^3.0.0",
+    "jest": "^22.0.4",
+    "uglifyjs-webpack-plugin": "^1.1.6",
+    "webpack": "^3.10.0"
+  }
+}
