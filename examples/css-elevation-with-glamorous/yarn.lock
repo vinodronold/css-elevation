@@ -1622,9 +1622,9 @@ css-color-names@0.0.4:
   version "0.0.4"
   resolved "https://registry.yarnpkg.com/css-color-names/-/css-color-names-0.0.4.tgz#808adc2e79cf84738069b646cb20ec27beb629e0"
 
-css-elevation@^1.0.1:
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/css-elevation/-/css-elevation-1.0.1.tgz#8114ad73593c4c677a329e3f2ddd900947c14313"
+css-elevation@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/css-elevation/-/css-elevation-1.0.2.tgz#8fd263c71d2ea35ee5e809bc201bc9160a61acbc"
 
 css-in-js-utils@^2.0.0:
   version "2.0.0"
