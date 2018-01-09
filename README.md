@@ -127,7 +127,7 @@ export default () => (
 )
 ```
 
-![Z = 8](https://raw.githubusercontent.com/vinodronold/css-elevation/master/images/Z8.PNG "Z = 8")
-![Z = 24](https://raw.githubusercontent.com/vinodronold/css-elevation/master/images/Z24.PNG "Z = 8")
-![Z = 8](https://raw.githubusercontent.com/vinodronold/css-elevation/master/images/COLOR_Z8.PNG "Z = 8 with Color")
-![Z = 24](https://raw.githubusercontent.com/vinodronold/css-elevation/master/images/COLOR_Z24.PNG "Z = 8 with Color")
+![Z = 8](https://raw.githubusercontent.com/vinodronold/css-elevation/blob/master/img/images/Z8.PNG "Z = 8")
+![Z = 24](https://raw.githubusercontent.com/vinodronold/css-elevation/blob/master/img/images/Z24.PNG "Z = 8")
+![Z = 8](https://raw.githubusercontent.com/vinodronold/css-elevation/blob/master/img/images/COLOR_Z8.PNG "Z = 8 with Color")
+![Z = 24](https://raw.githubusercontent.com/vinodronold/css-elevation/blob/master/img/images/COLOR_Z24.PNG "Z = 8 with Color")
