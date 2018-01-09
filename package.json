@@ -1,6 +1,6 @@
 {
   "name": "css-elevation",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Object Elevation with Box Shadow",
   "main": "lib/index.js",
   "scripts": {
