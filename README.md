@@ -20,7 +20,7 @@ or
 yarn add css-elevation
 ```
 
-[DEMO](https://react-guitar-chord.now.sh/)
+[DEMO](https://css-elevation.now.sh/)
 
 ```javascript
 import elevation, { cssElevation, cssElevationObject } from 'css-elevation'
@@ -86,8 +86,10 @@ const Box = styled.div`
 
 export default () => (
   <Fragment>
-    <Box z={12} />
-    <Box z={16} />
+    <Box z={8} />
+    <Box z={24} />
+    <Box z={8} r={255} g={60} b={60} />
+    <Box z={24} r={255} g={60} b={60} />
   </Fragment>
 )
 ```
@@ -112,15 +114,20 @@ const Box = glamorous.div(
     color: '#9E9E9E',
     background: 'white'
   },
-  ({ z }) => cssElevationObject({ z })
+  props => cssElevationObject({ ...props })
 )
 
 export default () => (
   <Fragment>
-    <Box z={12} />
-    <Box z={16} />
+    <Box z={8} />
+    <Box z={24} />
+    <Box z={8} r={255} g={60} b={60} />
+    <Box z={24} r={255} g={60} b={60} />
   </Fragment>
 )
 ```
 
-![C Chords](https://raw.githubusercontent.com/vinodronold/react-guitar-chord/master/images/C_CHORD.png "C Chords")
+![Z = 8](https://raw.githubusercontent.com/vinodronold/css-elevation/master/images/Z8.PNG "Z = 8")
+![Z = 24](https://raw.githubusercontent.com/vinodronold/css-elevation/master/images/Z24.PNG "Z = 8")
+![Z = 8](https://raw.githubusercontent.com/vinodronold/css-elevation/master/images/COLOR_Z8.PNG "Z = 8 with Color")
+![Z = 24](https://raw.githubusercontent.com/vinodronold/css-elevation/master/images/COLOR_Z24.PNG "Z = 8 with Color")
