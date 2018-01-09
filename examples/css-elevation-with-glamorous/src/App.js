@@ -1,27 +1,52 @@
-import React, { Component } from 'react'
+import React from 'react'
 import glamorous from 'glamorous'
 import { cssElevationObject } from 'css-elevation'
-import './App.css'
 
-const Box = glamorous.div(cssElevationObject({ z: 2 }), {
-  padding: 30,
-  margin: 20
+const App = glamorous.div({
+  textAlign: 'center'
+})
+const AppHeader = glamorous.header({
+  backgroundColor: '#222',
+  height: 150,
+  padding: 20,
+  color: 'white'
+})
+const AppTitle = glamorous.h1({
+  fontSize: '1.5em'
 })
 
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <header className="App-header">
-          <h1 className="App-title">CSS Elevation</h1>
-        </header>
-        <Box />
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
-      </div>
-    )
-  }
-}
+const Container = glamorous.div({
+  paddingTop: 48,
+  display: 'flex',
+  flexDirection: 'row',
+  flexWrap: 'wrap'
+})
 
-export default App
+const Box = glamorous.div(
+  {
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    width: 200,
+    height: 100,
+    margin: '0 60px 80px',
+    borderRadius: 3,
+    fontSize: '.8em',
+    color: '#9E9E9E',
+    background: 'white'
+  },
+  ({ z }) => cssElevationObject({ z })
+)
+
+export default () => (
+  <App>
+    <AppHeader>
+      <AppTitle>CSS Elevation</AppTitle>
+    </AppHeader>
+    <Container>
+      {Array(25)
+        .fill()
+        .map((_, z) => <Box key={z} z={z}>{`cssElevation({ z: ${z} })`}</Box>)}
+    </Container>
+  </App>
+)
