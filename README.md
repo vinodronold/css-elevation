@@ -127,7 +127,26 @@ export default () => (
 )
 ```
 
+```javascript
+<Box z={8} />
+```
+
 ![Z = 8](https://raw.githubusercontent.com/vinodronold/css-elevation/master/img/Z8.PNG "Z = 8")
+
+```javascript
+<Box z={24} />
+```
+
 ![Z = 24](https://raw.githubusercontent.com/vinodronold/css-elevation/master/img/Z24.PNG "Z = 8")
+
+```javascript
+<Box z={8} r={255} g={60} b={60} />
+```
+
 ![Z = 8](https://raw.githubusercontent.com/vinodronold/css-elevation/master/img/COLOR_Z8.PNG "Z = 8 with Color")
+
+```javascript
+<Box z={24} r={255} g={60} b={60} />
+```
+
 ![Z = 24](https://raw.githubusercontent.com/vinodronold/css-elevation/master/img/COLOR_Z24.PNG "Z = 8 with Color")
